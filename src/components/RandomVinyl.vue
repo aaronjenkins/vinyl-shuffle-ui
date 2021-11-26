@@ -1,5 +1,9 @@
 <template>
-    <p>{{dataReturned}}</p>
+    <img v-bind:src="dataReturned.data.body.cover.file.url" width="300" height="300"> 
+    <p>{{dataReturned.data.body.properties.Title.title[0].plain_text}}</p>
+    <p>{{dataReturned.data.body.properties.Artist.select.name}}</p>
+    <p>{{dataReturned.data.body.properties["Release Year"].number}}</p>
+    <p>{{dataReturned.data.body.properties.Genre.select.name}}</p>
 </template>
 
 
@@ -15,7 +19,7 @@ export default {
   },
 
   async created() {
-    let url = `https://mndi3iv2cb.execute-api.us-east-2.amazonaws.com/default/vinylshuffle`;
+    let url = `https://4175a2gyz6.execute-api.us-east-2.amazonaws.com/default/vinylshuffle`;
     let config = {
       headers: {
         "x-api-key": "5ZnRAbCUT59HeZgkWUxJL5OK0gA1elT59FEEeGPU"
