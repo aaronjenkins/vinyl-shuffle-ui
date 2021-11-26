@@ -1,15 +1,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <RandomVinyl />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RandomVinyl from './components/RandomVinyl.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RandomVinyl
   }
 }
 </script>
