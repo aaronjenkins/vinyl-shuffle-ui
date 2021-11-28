@@ -25,7 +25,6 @@ export default {
   top: 50;
   left: 25;
   right: 25;
-  bottom: 0;
   margin: auto;
 }
 body{  background-color: #5d5c61;
