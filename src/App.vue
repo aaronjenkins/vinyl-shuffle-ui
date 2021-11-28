@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import RandomVinyl from './components/RandomVinyl.vue'
+import RandomVinyl from "./components/RandomVinyl.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    RandomVinyl
-  }
-}
+    RandomVinyl,
+  },
+};
 </script>
 
 <style>
@@ -19,13 +19,15 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #adadad;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50;
+  left: 25;
+  right: 25;
+  bottom: 0;
+  margin: auto;
 }
-
+body{  background-color: #5d5c61;
+}
 </style>
